@@ -15,7 +15,7 @@ def check(st):
     for i in s:
         p = int(i)
         if p<0 or p>255: return False
-        if i[0]=="0": return False
+        if i[0]=="0" and len(i)>1: return False
     return True
 for _ in range(intinp()):
     ans = []
